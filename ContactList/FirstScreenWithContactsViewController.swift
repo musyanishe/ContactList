@@ -7,7 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstScreenWithContactsViewController: UITableViewController {
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
