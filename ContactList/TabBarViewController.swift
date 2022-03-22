@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUpViewController(with: persons)
     }
     
     private func setUpViewController(with: [Person]) {
@@ -23,7 +23,8 @@ class TabBarViewController: UITabBarController {
             if let navigationVC = $0 as? UINavigationController {
                 guard let firstScreenVC = navigationVC.topViewController as? FirstScreenWithContactsViewController else { return }
                     firstScreenVC.persons = persons
-                } else if let secondScreenVC = $0 as? SecondScreenTableViewController {
+            } else if let secondNavigationVC = $0 as? UINavigationController {
+                guard let  secondScreenVC = secondNavigationVC.topViewController as? SecondScreenTableViewController else { return }
                     secondScreenVC.persons = persons
                 }
             }
