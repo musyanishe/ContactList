@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE87070F27E9F9460017F980 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE87070E27E9F9460017F980 /* TabBarViewController.swift */; };
 		CEB1C1D127E90DF200303F5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1D027E90DF200303F5E /* AppDelegate.swift */; };
 		CEB1C1D327E90DF200303F5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1D227E90DF200303F5E /* SceneDelegate.swift */; };
 		CEB1C1D527E90DF200303F5E /* FirstScreenWithContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1D427E90DF200303F5E /* FirstScreenWithContactsViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE87070E27E9F9460017F980 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CEB1C1CD27E90DF200303F5E /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB1C1D027E90DF200303F5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB1C1D227E90DF200303F5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				CEB1C1D027E90DF200303F5E /* AppDelegate.swift */,
 				CEB1C1D227E90DF200303F5E /* SceneDelegate.swift */,
+				CE87070E27E9F9460017F980 /* TabBarViewController.swift */,
 				CEB1C1D427E90DF200303F5E /* FirstScreenWithContactsViewController.swift */,
 				CEB1C1E627E9114400303F5E /* SecondScreenTableViewController.swift */,
 				CEB1C1E427E90F5300303F5E /* Person.swift */,
@@ -151,6 +154,7 @@
 				CEB1C1E927E91D7B00303F5E /* Services.swift in Sources */,
 				CEB1C1D127E90DF200303F5E /* AppDelegate.swift in Sources */,
 				CEB1C1E527E90F5300303F5E /* Person.swift in Sources */,
+				CE87070F27E9F9460017F980 /* TabBarViewController.swift in Sources */,
 				CEB1C1D327E90DF200303F5E /* SceneDelegate.swift in Sources */,
 				CEB1C1E727E9114400303F5E /* SecondScreenTableViewController.swift in Sources */,
 			);

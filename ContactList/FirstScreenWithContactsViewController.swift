@@ -9,7 +9,7 @@ import UIKit
 
 class FirstScreenWithContactsViewController: UITableViewController {
     
-    
+    var persons: [Person] = []
     
 
     override func viewDidLoad() {
