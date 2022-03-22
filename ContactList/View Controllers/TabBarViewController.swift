@@ -19,15 +19,14 @@ class TabBarViewController: UITabBarController {
     private func setUpViewController(with: [Person]) {
         guard let viewControllers = viewControllers else { return }
         
-        viewControllers.forEach{
-            if let navigationVC = $0 as? UINavigationController {
-                guard let firstScreenVC = navigationVC.topViewController as? FirstScreenWithContactsViewController else { return }
-                    firstScreenVC.persons = persons
-            } else if let secondNavigationVC = $0 as? UINavigationController {
-                guard let  secondScreenVC = secondNavigationVC.topViewController as? SecondScreenTableViewController else { return }
-                    secondScreenVC.persons = persons
-                }
+        for viewController in viewControllers {
+            guard let navigationVC = viewController as? UINavigationController else { return }
+            if let firstScreenVC = navigationVC.topViewController as? FirstScreenWithContactsViewController {
+                firstScreenVC.persons = persons
+            } else if let secondScreenVC = navigationVC.topViewController as? SecondScreenTableViewController {
+                secondScreenVC.persons = persons
             }
         }
     }
+}
 
