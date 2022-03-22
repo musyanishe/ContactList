@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
     }
     
     private func setUpViewController(with: [Person]) {
-        guard let viewControllers = self.viewControllers else { return }
+        guard let viewControllers = viewControllers else { return }
         
         viewControllers.forEach{
             if let navigationVC = $0 as? UINavigationController {

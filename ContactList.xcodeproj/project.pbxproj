@@ -17,7 +17,7 @@
 		CEB1C1DD27E90DF400303F5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB1C1DB27E90DF400303F5E /* LaunchScreen.storyboard */; };
 		CEB1C1E527E90F5300303F5E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1E427E90F5300303F5E /* Person.swift */; };
 		CEB1C1E727E9114400303F5E /* SecondScreenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1E627E9114400303F5E /* SecondScreenTableViewController.swift */; };
-		CEB1C1E927E91D7B00303F5E /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1E827E91D7B00303F5E /* Services.swift */; };
+		CEB1C1E927E91D7B00303F5E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1C1E827E91D7B00303F5E /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		CEB1C1DE27E90DF400303F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB1C1E427E90F5300303F5E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CEB1C1E627E9114400303F5E /* SecondScreenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenTableViewController.swift; sourceTree = "<group>"; };
-		CEB1C1E827E91D7B00303F5E /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		CEB1C1E827E91D7B00303F5E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +47,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE37530827EA625400072E96 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C1D227E90DF200303F5E /* SceneDelegate.swift */,
+				CEB1C1D027E90DF200303F5E /* AppDelegate.swift */,
+				CEB1C1DE27E90DF400303F5E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE37530927EA62A800072E96 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C1D627E90DF200303F5E /* Main.storyboard */,
+				CEB1C1DB27E90DF400303F5E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE37530A27EA62DC00072E96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C1D927E90DF400303F5E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE37530B27EA630700072E96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C1E827E91D7B00303F5E /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE37530C27EA631300072E96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB1C1E427E90F5300303F5E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE37530D27EA634900072E96 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE87070E27E9F9460017F980 /* TabBarViewController.swift */,
+				CEB1C1D427E90DF200303F5E /* FirstScreenWithContactsViewController.swift */,
+				CE37530627EA354F00072E96 /* ContactDetailsViewController.swift */,
+				CEB1C1E627E9114400303F5E /* SecondScreenTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		CEB1C1C427E90DF100303F5E = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +120,12 @@
 		CEB1C1CF27E90DF200303F5E /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				CEB1C1D027E90DF200303F5E /* AppDelegate.swift */,
-				CEB1C1D227E90DF200303F5E /* SceneDelegate.swift */,
-				CE87070E27E9F9460017F980 /* TabBarViewController.swift */,
-				CEB1C1D427E90DF200303F5E /* FirstScreenWithContactsViewController.swift */,
-				CE37530627EA354F00072E96 /* ContactDetailsViewController.swift */,
-				CEB1C1E627E9114400303F5E /* SecondScreenTableViewController.swift */,
-				CEB1C1E427E90F5300303F5E /* Person.swift */,
-				CEB1C1E827E91D7B00303F5E /* Services.swift */,
-				CEB1C1D627E90DF200303F5E /* Main.storyboard */,
-				CEB1C1D927E90DF400303F5E /* Assets.xcassets */,
-				CEB1C1DB27E90DF400303F5E /* LaunchScreen.storyboard */,
-				CEB1C1DE27E90DF400303F5E /* Info.plist */,
+				CE37530D27EA634900072E96 /* View Controllers */,
+				CE37530C27EA631300072E96 /* Model */,
+				CE37530B27EA630700072E96 /* Services */,
+				CE37530A27EA62DC00072E96 /* Resources */,
+				CE37530927EA62A800072E96 /* Storyboards */,
+				CE37530827EA625400072E96 /* Supporting Files */,
 			);
 			path = ContactList;
 			sourceTree = "<group>";
@@ -154,7 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB1C1D527E90DF200303F5E /* FirstScreenWithContactsViewController.swift in Sources */,
-				CEB1C1E927E91D7B00303F5E /* Services.swift in Sources */,
+				CEB1C1E927E91D7B00303F5E /* DataManager.swift in Sources */,
 				CEB1C1D127E90DF200303F5E /* AppDelegate.swift in Sources */,
 				CEB1C1E527E90F5300303F5E /* Person.swift in Sources */,
 				CE87070F27E9F9460017F980 /* TabBarViewController.swift in Sources */,
@@ -311,7 +359,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DTSRHZ7G5C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = "ContactList/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DTSRHZ7G5C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = "ContactList/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

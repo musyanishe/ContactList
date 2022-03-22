@@ -36,8 +36,8 @@ class FirstScreenWithContactsViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let contactDetailsVC = segue.destination as? ContactDetailsViewController else { return }
-//        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//        contactDetailsVC.title = sender as?
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        contactDetailsVC.person = persons[indexPath.row]
     }
 
 
