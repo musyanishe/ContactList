@@ -37,7 +37,7 @@ class SecondScreenTableViewController: UITableViewController {
             content.image = UIImage(systemName: "phone")
         } else {
             content.text = person.email
-            content.image = UIImage(systemName: "email")
+            content.image = UIImage(systemName: "mail")
         }
         
         cell.contentConfiguration = content
