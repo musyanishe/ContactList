@@ -12,9 +12,9 @@ class ContactDetailsViewController: UIViewController {
     @IBOutlet var nameOfPersonLabel: UILabel!
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
-    
+
     var person: Person!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nameOfPersonLabel.text = person.title
